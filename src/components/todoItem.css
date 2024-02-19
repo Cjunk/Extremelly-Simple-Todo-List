@@ -1,0 +1,66 @@
+@import url("../palette.css");
+.todo-item-container {
+  color: var(--todo-task-item-txt-clr);
+  text-align: left;
+}
+.buttonclass {
+  margin: 0;
+  width: 80%;
+}
+.ulist {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.li-expander {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+.form-container input {
+  font-size: 26px;
+}
+.form-container button {
+  margin: 30px;
+  font-size: 26px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+text {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.spantext2 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--todo-task-item-completed);
+  opacity:0.2;
+
+}
+h1 {
+  color: linear-gradient(to right, var(--heading-background-clr-1), var(--heading-background-clr-2));
+  background-image: linear-gradient(to right, var(--heading-background-clr-1), var(--heading-background-clr-2));
+}
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white; /* Set your header background color */
+  z-index: 1000; /* Ensure the header is above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better vi*/
+}
+button {
+  cursor: pointer;
+  margin-right:10px;
+  background-color: rgb(216, 67, 67);
+  color:white;
+  
+}

@@ -1,0 +1,12 @@
+:root {
+
+    --App-bck-grnd-clr:rgb(243, 241, 241);
+    --App-todo-heading-txt-clr:white;
+    
+
+    --todo-task-item-txt-clr:black;
+
+    --todo-task-item-completed:lightgreen;
+    --heading-background-clr-1:blue;
+    --heading-background-clr-2:pink;
+}
