@@ -49,7 +49,7 @@ const AddTodoForm = ({ addTodo, clearList }) => {
                 color="secondary"  
                 onClick={(e) => handleSubmit(e, true)} // Pass true to indicate clear button
             >
-                Clear List
+                Clear All
             </StyledButton>
         </form>
     );

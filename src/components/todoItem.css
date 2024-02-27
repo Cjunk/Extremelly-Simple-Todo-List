@@ -24,13 +24,14 @@ li {
   font-size: 26px;
 }
 .form-container button {
-  margin: 30px;
-  font-size: 26px;
+  margin: 10px;
+  font-size: 20px;
 }
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 text {
   width: 100%;
@@ -42,13 +43,9 @@ text {
   padding: 0;
   margin: 0;
   background-color: var(--todo-task-item-completed);
-  opacity:0.2;
+  opacity: 0.2;
+}
 
-}
-h1 {
-  color: linear-gradient(to right, var(--heading-background-clr-1), var(--heading-background-clr-2));
-  background-image: linear-gradient(to right, var(--heading-background-clr-1), var(--heading-background-clr-2));
-}
 .header {
   position: sticky;
   top: 0;
@@ -56,11 +53,40 @@ h1 {
   background-color: white; /* Set your header background color */
   z-index: 1000; /* Ensure the header is above other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better vi*/
+  display: grid;
+}
+.title-wrapper {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  color: linear-gradient(to right, var(--heading-background-clr-1), var(--heading-background-clr-2));
+  background-image: linear-gradient(to right, var(--heading-background-clr-1), var(--heading-background-clr-2));
+}
+h1 {
+  background-image: linear-gradient(to right, #9cbb54, #fdfdfb); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip text to the background */
+  background-clip: text;
+  color: transparent; /* Make text transparent */
+}
+.title-wrapper h1 {
+  margin: 0;
+}
+.coffee-wrapper {
+  align-self: center;
+  margin-top: 10px;
 }
 button {
   cursor: pointer;
-  margin-right:10px;
+  margin-right: 10px;
   background-color: rgb(216, 67, 67);
-  color:white;
-  
+  color: white;
+}
+
+@media screen and (max-width: 777px) {
+  .form-container input {
+    font-size: 18px;
+  }
+  .form-container button {
+    margin: 8px;
+    font-size: 16px;
+  }
 }
